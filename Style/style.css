@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -----font poppins------------- */
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+
+}
+
+/* ----------font inter-------------- */
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+
+}
+
+/* --------font manrope------------ */
+
+.manrope {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+
+}
+
+/* shered style-------------- */
+.display-flex {
+  display: flex;
+}
+
+.text-black {
+  color: #3A3A3A;
+}
+
+.text-gray {
+  color: #000000de;
+}
+
+.text-light-gray {
+  color: #6C6C6C;
+}
+
+.bg-gray {
+  background-color: #AAAAAA;
+}
+
+.btn-primary {
+  font-weight: 700;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  background-color: #e02c6d;
+  margin-top: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+
+
+
+/* navbar related style */
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar {
+  padding: 87px 10px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+
+}
+
+.menue-bar {
+  list-style: none;
+  justify-content: flex-end;
+  gap: 34px;
+}
+
+.menue-list,
+.banner-info {
+  font-weight: 600;
+}
+
+.menue {
+  text-decoration: none;
+}
+
+/* -------banner related style------------- */
+.banner {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.banner-content {}
+
+.banner-title {
+  max-width: 582px;
+  font-size: 3.25rem;
+  font-weight: 700;
+}
+
+.banner-info {
+  max-width: 505px;
+  margin-top: 16px;
+}
+
+#btn-banner{
+  border-radius: 41px;
+}
+
+.banner-img-container{
+  padding: 30px 33px 31px 0;
+  background-image: url(../images/Circle\ design.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.banner-img-container>img{
+  width: 100%;
+}

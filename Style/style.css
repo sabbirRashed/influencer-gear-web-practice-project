@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 /* -----font poppins------------- */
 .font-poppins {
   font-family: "Poppins", sans-serif;
@@ -21,7 +25,7 @@
 
 /* --------font manrope------------ */
 
-.manrope {
+.font-manrope {
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
 
@@ -49,6 +53,7 @@
 }
 
 .btn-primary {
+  font-size: 1rem;
   font-weight: 700;
   color: white;
   padding: 10px 24px;
@@ -58,6 +63,11 @@
   justify-content: center;
   align-items: center;
   gap: 12px;
+}
+
+main {
+  max-width: 1110px;
+  margin: 0 auto;
 }
 
 
@@ -84,6 +94,7 @@ header {
 .menue-bar {
   list-style: none;
   justify-content: flex-end;
+  align-items: center;
   gap: 34px;
 }
 
@@ -94,6 +105,15 @@ header {
 
 .menue {
   text-decoration: none;
+}
+
+.menue-bar-icon {
+  display: none;
+}
+
+.menue-list-caurt,
+.menue-bar-icon {
+  font-size: 2.25rem;
 }
 
 /* -------banner related style------------- */
@@ -116,18 +136,369 @@ header {
   margin-top: 16px;
 }
 
-#btn-banner{
+#btn-banner {
   border-radius: 41px;
 }
 
-.banner-img-container{
+.banner-img-container {
   padding: 30px 33px 31px 0;
-  background-image: url(../images/Circle\ design.svg);
+  background-image: url(../images/Circle/design.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.banner-img-container>img{
+.banner-img-container>img {
   width: 100%;
+}
+
+/* ------others-brand style--------- */
+section {
+  margin-top: 100px;
+}
+
+
+.others-brand {
+  border-top: 1px solid rgb(221, 219, 219);
+  border-bottom: 1px solid rgb(221, 219, 219);
+  padding: 35px 60px;
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 60px;
+  align-items: center;
+  justify-items: center;
+
+}
+
+
+
+/* -----popular collection style---------- */
+.popular-collection {
+  padding: 0px 35px;
+}
+
+.popular-collection-title {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.collection-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+}
+
+.collection {
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px #00000026;
+
+}
+
+.collection-img>img {
+  width: 100%;
+}
+
+.collection-title {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-top: 16px;
+}
+
+.collection-price {
+  font-size: 1.5rem;
+  margin-top: 6px;
+}
+
+.collection-rattings {
+  font-weight: 700;
+  font-size: 0.88rem;
+  margin-top: 10px;
+  color: #5E6366;
+
+}
+
+.ratting {
+  margin-left: 10px;
+}
+
+.collection-rattings>i {
+  color: #FA8112;
+}
+
+.collection-info {
+  margin-top: 10px;
+  font-size: 0.88rem;
+  color: #5E6366;
+}
+
+.popular-collection-btn-container {
+  justify-content: flex-end;
+}
+
+#popular-collection-button {
+  background-color: transparent;
+  color: #e02c6d;
+  padding: 0px;
+  margin-top: 50px;
+}
+
+/* ---------feature-products style------------- */
+.feature-products {
+  justify-content: space-between;
+  align-items: center;
+  gap: 96px;
+}
+
+.feature-img-container>img {
+  width: 100%;
+}
+
+.feature-content-title {
+  font-size: 2.375rem;
+  font-weight: 700;
+  color: #0a0826;
+
+}
+
+.feature-content-info {
+  max-width: 501px;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+/* --------footer related style------------ */
+
+footer {
+  margin-top: 100px;
+  padding: 50px 0;
+  text-align: center;
+  background-color: #0a0826;
+  color: white;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.copyright-info {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-top: 5px;
+  line-height: 24px;
+}
+
+.social-midea-link-container {
+  margin-top: 17px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-midea-link-container>div {
+  width: 32px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.096);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----------small devices responsive------- */
+@media screen and (max-width: 576px) {
+
+
+  .banner,
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .banner,
+  .feature-products {
+    flex-direction: column-reverse;
+  }
+
+  section {
+    margin-top: 50px;
+  }
+
+  .feature-content-title,
+  .menue-list-caurt,
+  .menue-bar-icon {
+    font-size: 1.5rem;
+  }
+
+  /* navbar relative responsive */
+
+  .menue-list {
+    display: none;
+  }
+
+  .menue-bar-icon {
+    display: inline-block;
+  }
+
+  .navbar {
+    padding: 35px 15px 0;
+
+  }
+
+  /* ---------banner ralated responsive----------- */
+  .banner,
+  .banner-content {
+    margin-top: 15px;
+  }
+
+  .banner-content {
+    text-align: center;
+
+  }
+
+  .banner-title {
+    font-size: 1.75rem;
+  }
+
+  .banner-info {
+    font-size: 0.875rem;
+  }
+
+  #btn-banner,
+  #feature-btn {
+    margin: 20px auto 0;
+  }
+
+  .banner-img-container {
+    width: 80%;
+
+  }
+
+  /* -------others brand responsive---------- */
+  .alibaba {
+    grid-area: ali;
+  }
+
+  .daraz {
+    grid-area: dar;
+  }
+
+  .amazon {
+    grid-area: ama;
+  }
+
+  .ebay {
+    grid-area: eba;
+  }
+
+  .rakuten {
+    grid-area: rak;
+  }
+
+  .targer {
+    grid-area: tar;
+  }
+
+  .walmart {
+    grid-area: wal;
+  }
+
+  .others-brand {
+    padding: 0 26px;
+    border: none;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+    grid-template-areas:
+      'ali ali ali ama ama ama dar dar dar eba eba eba'
+      'rak rak rak rak wal wal wal wal tar tar tar tar'
+    ;
+
+
+  }
+
+  .others-brand>a>img {
+    width: 100%;
+  }
+
+  .rakuten,
+  .targer,
+  .walmart {
+    width: 80%;
+    justify-self: center;
+  }
+
+  /* ----------popular collection responsive--------- */
+  .popular-collection {
+    padding: 0px;
+  }
+
+  .popular-collection-title {
+    font-size: 1rem;
+
+  }
+
+  .collection-container {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 20px;
+
+  }
+
+  .collection-title,
+  .collection-price {
+    font-weight: 700;
+  }
+
+  .collection-rattings {
+    font-weight: 500;
+
+  }
+
+  .collection-info {
+    max-width: 196px;
+  }
+
+  br {
+    display: none;
+  }
+
+  /* ---------feature-products responsive--------- */
+  .feature-products {
+    text-align: center;
+    gap: 30px;
+  }
+
+  .feature-img-container {
+    padding: 0px 15px;
+  }
+
+  .feature-content-info {
+    max-width: 329px;
+    margin: 0 auto;
+  }
+
+  /* ---footer--------------- */
+  footer{
+    margin-top: 50px;
+  }
+  .footer-title {
+    font-size: 1rem;
+  }
+
+  .copyright-info {
+    max-width: 224px;
+    margin: 0 auto;
+    font-size: 0.75rem;
+
+  }
+
+  .social-midea-link-container {
+    margin-top: 10px;
+    gap: 7px;
+}
+
 }
